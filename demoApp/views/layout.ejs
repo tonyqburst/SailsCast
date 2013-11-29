@@ -28,17 +28,34 @@
     -->
 
     <!--STYLES-->
-
     <link rel="stylesheet" href="/linker/styles/bootstrap.css">
     <link rel="stylesheet" href="/linker/styles/custom.css">
-
     <!--STYLES END-->
 </head>
 
 <body>
+
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="/">Demo Sails App</a>
+    </div>
+</div>
+
 <%- body %>
 
+<div class="container">
+    <br>
+    <footer class="footer">
+        <div class="pull-right">
+            <a href="http://qburst.com">Qburst
+            </a>
 
+            <div>
+                For demo purpose only !! :D
+            </div>
+        </div>
+    </footer>
+</div>
 
 <!--
     Client-side Templates
@@ -92,6 +109,7 @@
 <script src="/linker/js/socket.io.js"></script>
 <script src="/linker/js/sails.io.js"></script>
 <script src="/linker/js/app.js"></script>
+<script src="/linker/js/jquery-1.10.1.js"></script>
 <script src="/linker/js/bootstrap.js"></script>
 <!--SCRIPTS END-->
 </body>

@@ -1,0 +1,25 @@
+body {
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+.jumbotron {
+    text-align: center;
+}
+
+.jumbotron h2 {
+    font-size: 1.5em;
+    letter-spacing: -1px;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: normal;
+    color: #808080;
+}
+
+.container .gray {
+    color: #808080;
+}
+
+.container .footer {
+    width: 25%;
+}
