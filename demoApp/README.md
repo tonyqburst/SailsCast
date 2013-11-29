@@ -1,2 +1,0 @@
-# demoApp
-### a Sails application
