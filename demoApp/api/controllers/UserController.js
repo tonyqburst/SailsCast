@@ -19,6 +19,28 @@ module.exports = {
 
     'new': function (req, res) {
         res.view();
+    },
+
+    create: function (req, res, next) {
+
+        var userObj = {
+            name: req.param('name'),
+            title: req.param('title'),
+            email: req.param('email'),
+            password: req.param('password'),
+            confirmation: req.param('confirmation')
+        }
+        User.create(userObj, function userCreated(err, user) {
+            if (err) {
+                console.log(err);
+                req.session.flash = {
+                    err: err
+                }
+                return res.redirect('/user/new');
+            }
+//            res.json(user);
+            res.write(err);
+        })
     }
 
 
