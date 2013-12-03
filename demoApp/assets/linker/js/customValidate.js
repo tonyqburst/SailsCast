@@ -10,8 +10,7 @@ $(document).ready(function () {
                 email: true
             },
             password: {
-                minlength: 6,
-                required: true
+                minlength: 6
             },
             confirmation: {
                 minlength: 6,
